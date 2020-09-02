@@ -1,0 +1,64 @@
+.bo {
+    width: 480px;
+    height: 360px;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+}
+
+.anh {
+    background-image: url(./4.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    position : absolute;
+    z-index: 1;
+    transition: 0.4s;
+}
+
+.den {
+    width: 480px;
+    height: 380px;
+    position: absolute;
+    z-index: 2;
+    background: #00000042;
+    top: 0;
+    left: 0;
+    transition: 0.4s;
+    opacity: 0;
+}
+
+.chu {
+    position: absolute;
+    z-index: 3;
+    left: 40px;
+    background: #fff;
+    padding: 10px 20px;
+    transform: translateX(-600px);
+    transition: 0.4s
+}
+
+
+.bo .chu1{
+    top: 80px;
+}
+.bo .chu2{
+    top: 130px;
+    transition-delay: 0.2s;
+}
+.bo .chu3{
+    top: 180px;
+    transition-delay: 0.3s
+}
+
+.bo:hover .anh {
+    transform: scale(1.2);
+}
+
+.bo:hover .den{
+    opacity: 1;
+}
+
+.bo:hover .chu{
+    transform: translateX(0px)
+}
